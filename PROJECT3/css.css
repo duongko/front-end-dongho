@@ -1,0 +1,832 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.menutren{
+
+    position: absolute; 
+    width:100% ;
+    height: 11%;
+    background-color: #242424;
+    z-index: 1;
+}
+.iconmenu{
+    position: relative;
+    width: 2.5rem;
+    height:2.6rem;
+    background-color:#242424;
+    left: 7.8%;
+    top:-12px;
+    border:1px solid #2d2d2d;
+    cursor: pointer;
+}
+.vach1,.vach2,.vach3{
+    position: absolute;
+    width: 61%;
+    height: 6%;
+    background-color:#fff;
+    top: 28px;
+    left: 20%;
+}
+.vach1 {
+    position: absolute;
+    top: 12px;
+}
+
+.vach2 {
+    position: absolute;
+    top: 20px;
+}
+/* MENU DOC */
+
+.menudoc{
+    background: #242424;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    width: 21.6%;
+    height: 100%;
+    z-index: 2;
+    left: -100%;
+    border:1.4px solid #2d2d2d;
+}
+.toping ul {
+    position: absolute;
+    top: 22%;
+    line-height: 41px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    left: 10px;
+}
+.toping ul li {
+    list-style-type: none;
+}
+.toping ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition:0.3s ease-out ;
+}
+.toping ul li a:hover{
+    color: #a8741a;
+}
+.menudoc .logo{
+    position: absolute;
+    width: 70%;
+    top: 7%;
+    left: 15%;
+    z-index: 3;
+}
+.toping ul::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.48%;
+    background-color: #2d2d2d;
+    top:113%
+    
+}
+.dangky{
+    z-index:4;
+    position:absolute;
+    top: 448px;
+    color: #FFF;
+    left: 15.8%
+} 
+input#exampleInputEmail1 {
+    margin-left: -16px;
+    margin-top: -16px;
+}
+.dangky p{
+    font-size: 20px;
+    font-family: inherit;
+}
+.edit {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+    background:#242424;
+    left: 290px;
+    top: 9px;
+    border: 1.4px solid #2d2d2d;
+    cursor:pointer;
+}
+.thuvao{
+    
+    
+    animation: thuvao 0.6s ease-in-out forwards ;
+}
+@-webkit-keyframes thuvao{
+    0%{
+        opacity: 1;
+        left: 0;
+        width: 21.6%;
+        
+    }
+    100%{
+        opacity: 0;
+        z-index: 0;
+    
+        width: 0;
+    }
+}
+.rangoai{
+   animation: rangoai 0.4s forwards
+}
+@-webkit-keyframes rangoai{
+    0%{
+        opacity: 1;
+      
+        z-index: 3;
+        width:0;
+    }
+    100%{
+        opacity: 1;
+        left: 0;
+         
+        width: 21.6%;
+    
+    }
+}
+
+ /* MENU NGANG */
+
+.benphai{
+background-color:#242424;
+position: absolute;
+width: 50%;
+height: 100%;
+    top: 0px;
+    right: 0;
+}
+.search {
+    position: absolute;
+    top: 15%;
+    width: 70%;
+    left: 7.5%;
+    border-radius: 50px;
+    box-sizing: border-box;
+    transition: 1.5s;
+   
+}
+input[type="search"] {
+    width: 259px;
+    height: 45px;
+    /* border-radius: 25px ; */
+    padding: 18px;
+    border: none;
+    border-bottom:1px solid #fff; 
+
+    background-color: #242424;
+    color: #fff;
+  
+}
+
+i.fas.fa-search,i.fa.fa-address-book,i.fa.fa-heart,i.fas.fa-exchange-alt,
+i.fas.fa-shopping-cart,i.fas.fa-angle-left,i.fas.fa-angle-right {
+    position: absolute;
+    left: 269px;
+    top: 8px;    
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-right:1px solid #2d2d2d ;
+    text-align: center;
+    font-size: 19px;
+    transition: 1.5s;
+    color: #fff;
+    background-color: #242424;
+    cursor: pointer;
+}
+.icon1,.icon2,.icon3{
+    position: absolute;
+    width: 7%;
+    height: 86%;
+    background-color: #242424;
+    left: 380px;
+    border-left:1px solid #2d2d2d ;
+    border-right:1px solid #2d2d2d ;
+
+
+}
+.icon2{
+    left: 427px;
+}
+.icon3{
+    left: 473px;
+}
+i.fa.fa-address-book{
+    font-size: 26px;
+    left: 25%;
+    top:18px;
+}
+i.fa.fa-heart {
+    left:10px;
+    font-size: 22px;
+    top:23px;
+    z-index: 1;
+
+}
+i.fas.fa-exchange-alt{
+    left:10px;
+    font-size: 22px;
+    top:23px;
+    z-index: 2;
+
+}
+i.fas.fa-shopping-cart{
+    left:570px;
+    font-size: 22px;
+    top:20px;
+    z-index: 2;
+
+}
+.icon1:hover,.icon2:hover,.icon3:hover{
+  
+    background-color: #a8741a;
+}
+.dangnhap{
+    position: absolute;
+    width: 149px;
+    height: 75px;
+    top: 60px;
+    background-color: #2d2d2d;
+    left: 70.5%;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;/*khong thể ấn dc*/
+}
+.dangnhap.hienra{
+    opacity: 1; 
+    visibility:visible; /*hiển thị lại*/
+}
+
+/* ....,.... LÀM BACKGROUND SLIDE...... */
+.anh img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.anh{
+    width: 100%;
+    height: 576px;
+    overflow: hidden;
+   
+}
+.next,.prever {
+    background:#2d2d2d;
+    width: 5%;
+    height: 11%;
+    position: absolute;
+    top: 52%;
+    border-radius: 50%;
+    left: 2%;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+.prever{
+    background-color: #242424;
+    left: 93%;
+}
+i.fas.fa-angle-left {
+    left: 26%;
+    font-size: 51px;
+    width: 5%;
+    height: 10%;
+    border: none;
+}
+i.fas.fa-angle-right{
+    left: 33%;
+    font-size: 51px;
+    width: 5%;
+    height: 13%;
+    border: none;
+}
+.next:hover,.prever:hover{
+  
+    background-color:#a8741a ;
+    
+}
+.next.hienra,.prever.hienra{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.hinhanh1{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top:0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.hinhanh1.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hinhanh1.active.sangtrai{
+    animation: sangtrai 0.4s forwards;
+}
+@-webkit-keyframes sangtrai{
+    0%{
+        width:100%;
+        /* transform: scale(1); */
+        opacity: 0.5 ;
+        visibility:visible;
+    }
+    100%{
+        width:0;   
+        /* transform: scale(0); */
+        opacity: 0;
+        visibility:hidden;
+    }
+}
+.hinhanh1.phaivao{
+    animation: phaivao 0.4s forwards;
+}
+@-webkit-keyframes phaivao{
+    0%{
+        width: 0;
+        /* transform: scale(0); */
+        opacity: 0;
+        visibility:hidden;
+    }
+    100%{
+        width: 100%;
+        /* transform:scale(1); */
+        opacity: 1 ;
+        visibility:visible;
+    }
+}
+.hinhanh1.active.sangphai{
+    animation: sangphai 0.4s forwards;
+}
+@-webkit-keyframes sangphai{
+    0%{
+        transform:scale(1);
+        opacity: 1 ;
+        visibility:visible;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+        visibility:hidden;
+    }
+}
+.hinhanh1.traivao{
+    animation: traivao 0.4s forwards;
+}
+@-webkit-keyframes traivao{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+        visibility:hidden;
+    }
+    100%{
+        transform:scale(1);
+        opacity: 1 ;
+        visibility:visible;
+    }
+}
+/*NUT*/
+@font-face{
+    font-family: "tradewinds";
+    src:url("./fonts/TradeWinds-Regular.ttf")
+}
+.nut1 {
+    font-family:fantasy;
+    width: 150px;
+    height: 47px;
+    background: #222533;
+    position: absolute;
+    top: 330px;
+    z-index: 2;
+    left: 532px;
+    padding: 13px ;
+    cursor: pointer;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    opacity: 0;
+    visibility: hidden;
+    animation: chuyendong3 0.6s forwards;
+    animation-delay: 0.6s;
+   
+}
+.nut1:hover{
+    background:aliceblue ;
+     color:#222533 ;
+        z-index: 2;
+    }
+    @-webkit-keyframes chuyendong3{
+        0%{
+            opacity: 0;
+            visibility: hidden;
+            top:348px;
+        }
+        100%{
+            opacity: 1;
+            visibility: visible;
+            top:330px;
+        }
+    }
+    .nut2 {
+        font-family: fantasy;
+        width: 150px;
+        height: 47px;
+        border: 3px solid #13d7d7;
+      
+        position: absolute;
+        top: 330px;
+        z-index: 2;
+        left: 714px;
+        padding: 10px ;
+        cursor: pointer;
+        text-align: center;
+        color: #222533;
+        letter-spacing: 1.5px;
+        opacity: 0;
+        visibility: hidden;
+        animation: chuyendong4 0.6s forwards;
+        animation-delay: 0.6s;
+       
+       
+    }
+    .nut2:hover{
+    background: #13d7d7;
+    border: 3px solid #13d7d7;
+       
+        z-index: 2;
+    }
+    @-webkit-keyframes chuyendong4{
+        0%{
+            opacity: 0;
+            visibility: hidden;
+            top:348px;
+        }
+        100%{
+            opacity: 1;
+            visibility: visible;
+            top:330px;
+        }
+    
+    }
+    .tieude{
+        font-size: 80px;
+        width: 806px;
+        height: 30px;
+        position: absolute;
+        z-index: 2;
+        top: 183px;
+        left: 450px;
+        color:black;
+        animation: chuyendoi2 0.6s forwards;
+        animation-delay: 0.6s ;
+        opacity: 0;
+    
+     }
+     @-webkit-keyframes chuyendoi2{
+         0%{
+             opacity: 0;
+             top:165px;
+         }
+         100%{
+             opacity: 1;
+             top:183px;
+         }
+    
+     }
+
+.chamtron ul{
+    position: absolute;
+    top: 88%;
+    left: 43%;
+}    
+.chamtron li{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin:10px;
+    background-color: #2d2d2d;
+    list-style-type: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:0.3s;
+         
+}
+.chamtron li:hover{
+    background-color: #242424;
+    border: 1px solid #2d2d2d;
+}
+.chamtron ul li.trang{
+    background:#fff;
+    border: 1px solid #2d2d2d;
+    
+}
+/* ............PHẦN DƯỚI.......... */
+
+.cha{
+    position: absolute;
+    background-color: #2d2d2d;
+    width: 100%;
+    height: 100%;
+}
+.cha .con1 {
+    position: absolute;
+    background: #2d2d2d;
+    border: 1px solid #3f3f3f;
+    width: 100%;
+    height: 198px;
+    z-index: 2;
+    top: 33px;
+}
+.chau1, .chau2, .chau3, .chau4{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background:#2d2d2d;
+    
+
+}
+.chau2{
+    left:25%;
+
+}
+.chau3{
+    left:50%;
+}
+.chau4{
+    left:75%;
+}
+
+.con1 img{
+    width:70px;
+    margin-left:39%;
+    margin-top:7%;   
+    
+}
+.chau4 img{
+    width: 81px;
+    height: 66px;
+    margin-top: 40px;
+}
+.em {
+    color: #fff;
+    margin-top: 19px;
+    text-align: center;
+}
+
+/* ......//////////.......... */
+#vach{
+    position: absolute;
+    width:100%;
+    height: 4px;
+    background-color: #3f3f3f;
+    margin-top: 24px;
+
+}
+.con2{
+    position: relative;
+    background: #242424;
+    border: 1px solid #3f3f3f;
+    width: 100%;
+    height: 1080px;
+    z-index: 2;
+    top: 230px;
+}
+.con2 .chau{
+    position:absolute;
+    width:64%;
+    height:50px;
+    background-color:#242424;
+    top:9%;
+    left:17%;
+}
+.tenchau1,.tenchau2,.tenchau3,.tenchau4{
+    position:absolute;
+    width:20%;
+    height:100%;
+    background-color:#2d2d2d;
+    color: #fff;
+    text-align: center;
+    border: 1.5px solid #3f3f3f;
+    font-family: none;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 2;
+}
+.tenchau2{
+    left:21%
+}
+.tenchau3{
+    left:42%;
+    width:28%
+}
+.tenchau4{
+    left:71%;
+    width:29%
+}
+
+.chau h5{
+    margin-top: 10px;
+}
+.tenchau2:hover,.tenchau3:hover,.tenchau4:hover{
+    
+    color: #a8741a;
+}
+.vang{
+    border: 1px solid #a8741a;
+    color: #a8741a;
+}
+
+.sanpham,.sanphamhot,.sanphambanchay,.sanphamkhuyenmai{
+    position: relative;
+    background: #2d2d2d;
+    border: 2px solid #2d2d2d;
+    box-shadow:1px 1px 1px #242424;
+    border-radius:6px ;
+    width: 85%;
+    height: 390px;
+    z-index: 2;
+    top: 180px;
+    left: 7%;
+    transition: 0.3s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.sanphamhot{
+    top:-210px;
+}
+.sanphambanchay{
+    top:-600px;
+}
+.sanphamkhuyenmai{
+    top:-990px;
+}
+.chuyen{
+    opacity: 1;
+    visibility: visible;
+}
+.pduct1,.pduct2,.pduct3,.pduct4{
+    position: absolute;
+    background:#2d2d2d;
+    height:100%;
+    width:25%;
+    z-index: 3;
+    cursor: pointer;
+     
+}
+.pduct1 img,.pduct2 img,.pduct3 img,.pduct4 img{
+    position: absolute;
+    width: 90%;
+    height: 64%;
+    left: 5%;
+    top: 3%;
+}
+.thongtin{
+    position: absolute;
+    width:85%;
+    height: 48px;
+    border-bottom: 1px solid #3f3f3f;
+    top: 67%;
+    left: 7%;
+    text-align: center;
+   }
+   .thongtin h3 a {
+       position: absolute;
+       display: block;
+       text-transform: capitalize;
+       text-decoration: none;
+       font-size: 17px;
+       font-weight: 400;
+       font-family: Prata,sans-serif;
+       line-height: 21px;
+       color: #fff;
+       height: 42px;
+       top: 0;
+   }
+   .thongtin h5{
+       position: absolute;
+       color: #a8741a;
+       top:61px;
+       left: 33%;
+   }
+   .hover {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    border-radius: 5px;
+    background: #242424;
+    transition:all ease-out 0.3s;
+    box-shadow: -6px 0px 10px 4px rgba(29, 28, 28, 0.89);
+    opacity: 0;
+    visibility: hidden;
+   
+}
+.me{
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    bottom: 0;
+    background: #242424;
+    border: 1px solid #242424;
+    border-top:1px solid #2d2d2dc7 ;
+   
+    
+   
+}
+.icon4,.icon5,.icon6{
+    position: absolute;
+    width: 14%;
+    height: 70%;
+    background: #3f3f3f;
+    border-radius: 3px;
+    border:0.5px solid;
+    box-shadow:0.1px 0.1px 0px 0.2px rgb(29, 28, 28);
+    left: 24%;
+    top:3%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icon6 {
+    left: 57%;
+}
+
+.icon5 {
+    left: 39.1%;
+    width: 17%;
+    background: #242424;
+}
+.icon4:hover,.icon5:hover,.icon6:hover{
+    background-color: #ebee44;
+}
+i.far.fa-heart,i.fas.fa-cart-plus,i.fa.fa-compress{
+    color: #fff;
+    position: absolute;
+    top: 27%;
+    left: 29%;
+}
+
+.pduct1:hover .hover,.pduct2:hover .hover,
+.pduct3:hover .hover,.pduct4:hover .hover{
+    opacity: 0.5;
+    visibility: visible;
+    height: 445px;
+}
+
+.bam{
+    position: absolute;
+    width: 75%;
+    height: 9%;
+    background-color: #242424;
+    color: #FFF;
+    top: 40%;
+    text-align: center;
+    left: 11%;
+    border-radius: 6px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+.bam h3 {
+    font-size: 23px;
+    font-family: serif;
+    margin-top: 3px;
+}
+.bam:hover{
+    background-color: #a8741a;
+}
+.pduct1:hover .bam,.pduct2:hover .bam,
+.pduct3:hover .bam,.pduct4:hover .bam{
+    opacity: 1;
+  
+    visibility: visible;
+
+}
+.pduct2{
+    left: 25%;
+}
+.pduct3{
+    left: 50%;
+}
+.pduct4{
+    left: 75%;
+}
+ /* ............CON3,,,,,,,,,,,, */
+ .con3{
+     position: absolute;
+     width: 100%;
+     height: 150px;
+     top:255%;
+     z-index: 3;
+
+ }
+ .con3 img{
+     width: 100%;
+ }
