@@ -1,0 +1,942 @@
+div{
+    display: block;
+}
+body{
+    width: 100px;
+}
+.menutren{
+background: rgba(0, 0, 0, 0.05);
+width: 101%;
+height: 80px;
+position: fixed;
+left: 0;
+top: 0;
+z-index: 1;
+transition: 0.5s;
+}
+.menutren.bienhinh{
+    height: 60px;
+    background: rgba(0,  0, 0, 0.788);
+    z-index: 3;
+
+}
+.menutren.bienhinh ul li a{
+    font-size: 15px;
+}
+.menutren.bienhinh ul{
+    top:8px;
+}
+
+
+.menutren ul {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    padding: -20px 29px;
+    right: -799px;
+    top: 16px;
+    width: 100%;
+
+}
+.logo1 {
+    color: antiquewhite;
+    font-size: 55px;
+    font-family: inherit;
+    position: absolute;
+    left: 48px;
+    top:8px;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-14px);
+    animation: chuyendong1 0.9s forwards;
+    animation-delay: 0.5s;
+    transition: 0.5s;
+}
+@-webkit-keyframes chuyendong1{
+    0%{
+        opacity: 0;
+        top:300px;
+    }
+    100%{
+        opacity: 1;
+        top:23px;
+        z-index: 2;
+    }
+}
+.menutren.bienhinh .logo1{
+    font-size: 48px;
+    transform: translateY(-20px);   
+}
+
+.home img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    left: 0;
+  
+
+}
+
+.home .tieude{
+    font-size: 80px;
+    width: 806px;
+    height: 30px;
+    position: absolute;
+    z-index: 2;
+    top: 183px;
+    left: 450px;
+    color: aliceblue;
+    animation: chuyendoi2 0.6s forwards;
+    animation-delay: 1.1s ;
+    opacity: 0;
+ }
+ @-webkit-keyframes chuyendoi2{
+     0%{
+         opacity: 0;
+         top:165px;
+     }
+     100%{
+         opacity: 1;
+         top:183px;
+     }
+
+ }
+span {
+    font-family: fantasy;
+}
+
+.menutren ul li {
+    list-style-type: none;
+}
+
+.menutren ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 23px;
+    position: relative;
+    font-size: 20px;
+    top:0;
+    animation: chuyendong 0.9s forwards;
+    animation-delay:0.3s ;
+    opacity: 0;
+   visibility: hidden;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+@-webkit-keyframes chuyendong{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        top:200px;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        top:0;
+    }
+}
+
+   
+    
+
+
+.menutren ul li a:hover{
+    color: #13d7d7;
+} 
+
+.home .nut1 {
+    font-family: fantasy;
+    width: 150px;
+    height: 25px;
+    background: #222533;
+    position: absolute;
+    top: 330px;
+    z-index: 2;
+    left: 532px;
+    padding: 13px ;
+    cursor: pointer;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    opacity: 0;
+    visibility: hidden;
+    animation: chuyendong3 0.6s forwards;
+    animation-delay: 1.1s;
+   
+}
+.home .nut1:hover{
+background:aliceblue ;
+ color:#222533 ;
+    z-index: 2;
+}
+@-webkit-keyframes chuyendong3{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        top:348px;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        top:330px;
+    }
+}
+.home .nut2 {
+    font-family: fantasy;
+    width: 150px;
+    height: 25px;
+    border: 3px solid aliceblue;
+  
+    position: absolute;
+    top: 330px;
+    z-index: 2;
+    left: 714px;
+    padding: 10px ;
+    cursor: pointer;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    opacity: 0;
+    visibility: hidden;
+    animation: chuyendong4 0.6s forwards;
+    animation-delay: 1.2s;
+   
+   
+}
+.home .nut2:hover{
+background: #13d7d7;
+border: 3px solid #13d7d7;
+   
+    z-index: 2;
+}
+@-webkit-keyframes chuyendong4{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        top:348px;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        top:330px;
+    }
+
+}
+
+/* NOIDUNG2 */
+.tongquan{
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background: white;
+    top: 660px;
+    left: 0;
+
+}
+.tongquan .header{
+    position: absolute;
+    width: 40%;
+    height: 454px;
+    background: white;
+    top: 105px;
+    left: 700px;
+    opacity: 0;
+
+}
+.header.bienhinh8{
+    animation: bienhinh8 0.8s forwards;
+    animation-delay: 0.1s;
+}
+@-webkit-keyframes bienhinh8{
+    0%{
+        opacity: 0.7;
+        left: 1000px;
+    }40%{
+        opacity: 1;
+        left: 680px;
+    }80%{
+        opacity: 1;
+        left: 720px;
+    }100%{
+        opacity: 1;
+        left: 680px;
+    }
+
+}
+
+.tongquan .header h1 {
+    font-family: inherit;
+    font-size: 38px;
+    color: #2c3e50;
+}
+
+.tongquan .header p {
+    font-family: none;
+    color: #a1b1bc;
+    font-size: 17px;
+}
+
+.tongquan .header li {
+    color: #a1b1bc;
+    line-height: 38px;
+    font-size: 17px;
+}
+.daibang {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    background: #35c2ea;
+    top:550px;
+}
+.daibang h1 {
+    padding: 29px;
+    font-family: monospace;
+    font-size: 33px;
+}
+
+
+
+
+
+/* NOIDUNG3 */
+.about {
+    /* background: #a1b1bc41; */
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 1403px;
+    left: 0;
+}
+.about .nd1 {
+    position: absolute;
+    width: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.24);
+    top: 62px;
+    left: 334px;
+    z-index: 2;
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: rotatey(75deg);
+}
+.about .nd1.bienhinh3{
+    animation: bienhinh3 1s forwards;
+    animation-delay: 0.7s;
+}
+@-webkit-keyframes bienhinh3{
+    0%{
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: rotatey(75deg);
+    }
+    100%{
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: rotatey(0deg);
+    }
+}
+.about .nd1 h1{
+    color:#2c3e50;
+}
+.about .nd1 p{
+    color:#a1b1bc;
+}
+.about .nd1 ul {
+    color: #a1b1bc;
+    line-height: 23px;
+}
+
+.about .nd2 img {
+    height: 434px;
+    background-attachment: fixed;
+  
+    transform-origin: center;
+    transform:rotate3d(2,2,2,0deg);
+    opacity: 0;
+
+}
+.about .nd2 img.bienhinh2{
+    animation: bienhinh2 0.9s forwards;
+}
+@-webkit-keyframes bienhinh2{
+    0%{
+        transform-origin: center;
+        transform:rotate3d(1,1,1,0deg);
+        opacity: 0;
+
+    }
+    100%{
+    transform:rotate3d(1,1,1,360deg);
+    opacity: 1;
+    z-index: 2;
+    }
+
+
+
+}
+
+
+.about .nd1 ul li {
+    line-height: 33px;
+}
+.nd3{
+    position: sticky;
+    width: 100%;
+    height: 600px;
+    top:950px;
+    /* background: url("./img/anh5.jpg") no-repeat; */
+    background-size: cover;
+
+}
+.about:hover .nd1 p{
+    color:#4c4e55;
+}  
+.about:hover .nd1{
+    border: 2px solid #13d7d7;
+}
+.about .nd3 h1,h3{
+    color: white;
+    position: absolute;
+    width: 393px;
+    height: 50px;
+    right: 72px;
+    top: 140px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    font-size: 36px;
+    opacity: 0;
+}
+.about .nd3 h1.bienhinh4{
+    animation: bienhinh4 0.8s forwards;
+}
+@-webkit-keyframes bienhinh4{
+    0%{
+        opacity: 0;
+        right: -100px;
+
+    }
+    100%{
+        opacity: 1;
+        right: 72px;
+    }
+}
+.about .nd3 h3.bienhinh5{
+    animation: bienhinh5 0.6s forwards;
+    animation-delay: 0.6s;
+}
+@-webkit-keyframes bienhinh5{
+    0%{
+        opacity: 0;
+        right: -180px;
+    }100%{
+        opacity: 1;
+        right:0px ;
+    }
+}
+.about .nd3 h3:hover{
+    color: red;
+}
+.about .nd3 h3 {
+    font-size: 79px;
+    right: 0px;
+}
+.nd4{
+    position: absolute;
+    background:#adb8c0;
+    width: 100%;
+    height: 1331px;
+    top: 1028 px;
+    
+   
+}
+.hover-effect{
+    position: absolute;
+    width: 99%;
+    height: 0;
+    background: white;
+    z-index: 2;
+    bottom: 4%;
+    left: 1%;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid white;
+   
+}
+.isotope ul li:hover{
+    opacity: 1;
+    transform: scale(0.95);
+}
+.isotope ul li:hover .hover-effect{
+opacity: 0.8;
+visibility: visible;
+height: 96.5%;
+bottom:2%;
+
+}
+.hover-effect p{
+    position: absolute;
+    top:20%;
+    left: 35%;
+    font-size: 32px;
+    color: #222533;
+    transition: 0.3s;
+    transition-delay: 0.35s;
+    opacity: 0;
+    transform: scale(0.3);
+}
+.isotope ul li:hover .hover-effect p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.effect2{
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    z-index: 4;
+    top:26%;
+    left: 28%;
+    transition: 0.3s;
+   
+    transform: scale(0.5);
+    opacity: 0;
+}
+.isotope ul li:hover .effect2{
+opacity: 1;
+transform: scale(1.2);
+transition-delay: 0.3s;
+}
+
+.isotope{
+  
+    width: 90%;
+    height: 100%;
+    position: absolute;
+   top:100px;
+    margin: auto;
+   
+
+}
+.isotope ul{
+  position: absolute;
+    background:url("./img/anh7.jpg") no-repeat;
+    background-size: cover;
+    width:95%;
+    height: 100%;
+    top:100px;
+   
+}
+.isotope ul li{
+   
+    width: 19%;
+    position: relative;
+    list-style-type: none; 
+    margin-left: 8px;
+    transition: 0.4s;  
+    margin-top: -3px;
+}
+.isotope ul li img{
+   border: 3px solid black;
+   position: relative;   
+    width:100%;
+    bottom: 0;
+    transform: scale(1.1);
+    transform: rotateY(0deg);
+    transform-origin: 50% 0%;
+    opacity: 0;
+    transition: 0.4s;
+    overflow: hidden;
+}
+.isotope ul li:hover{
+    opacity: 1;
+}
+.isotope ul li:hover img{
+    transform: scale(1);  
+    /* bottom:10px; */
+}
+    
+
+.isotope ul li .thaydoi1.bienhinh6{
+    animation: bienhinh6 2s forwards;
+    animation-delay: 0.2s;
+  
+}
+@-webkit-keyframes bienhinh6{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+        transform: rotateY(0deg);
+        visibility: hidden;
+
+
+    }
+    40%{
+        opacity: 0.4;
+        transform: scale(0.4);
+        transform: rotateY(380deg);
+        visibility: visible;
+    }
+    80%{
+        opacity: 0.7;
+        transform: scale(0.8);
+        transform: rotateY(340deg);
+        visibility: visible;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.2);
+        transform: rotateY(360deg);
+        visibility: visible;
+        
+    }
+}
+.isotope ul li .thaydoi2.bienhinh7{
+    animation:bienhinh7 2s forwards;    
+    animation-delay: 0.2s;
+}
+@-webkit-keyframes bienhinh7{
+    0%{
+       opacity: 0;
+       transform: scale(0);
+       transform: rotateY(0);
+       visibility: visible;
+
+    } 40%{
+        opacity: 0.4;
+        transform: scale(0.4);
+        transform: rotateY(-380deg);
+        visibility: visible;
+    } 80%{
+        opacity: 0.7;
+        transform: scale(0.7);
+        transform: rotateY(-340deg);
+        visibility: visible;
+    }100%{
+        opacity: 1;
+        transform: scale(0.8);
+        transform: rotateY(-360deg);
+        visibility: visible;
+    }
+
+}
+
+
+
+
+.nd5{
+    
+    width: 100%;
+    height: 700px;
+    top:2280px;
+    /* background: url("./img/anh5.jpg") no-repeat; */
+    background-size: cover;
+    position: absolute;
+}
+.nd6{
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 900px;
+    top: 2780px;
+}
+
+.khoi1.bienhinh11{
+    animation: bienhinh11 0,8s forwards;
+    animation-delay: 0.1s;
+}
+@-webkit-keyframes bienhinh11{
+    0%{
+       opacity: 0;
+       top:800px; 
+    }40%{
+        opacity: 0.4;
+    
+
+        
+    }80%{
+        opacity: 0.8;
+       
+    }100%{
+        opacity: 1;
+        top: 100px;
+        z-index: 3;
+    }
+}
+.khoi2.bienhinh10{
+    animation: bienhinh10 0.8s forwards;
+    animation: 0.2s;
+}
+@-webkit-keyframes bienhinh10{
+    0%{
+        opacity: 0;
+        top:800px; 
+     }40%{
+         opacity: 0.4;
+         top:400px;
+     
+ 
+         
+     }80%{
+         opacity: 0.8;
+         top:200px;
+        
+     }100%{
+         opacity: 1;
+         top: 100px;
+         z-index: 3;
+     }
+}
+.khoi1,.khoi2,.khoi3{
+    width: 21%;
+    height: 200px;
+    position: relative; 
+    display: inline-block;
+    margin-left: 36px;
+    margin-top: 18px;
+    top:100px;
+ 
+}
+
+.khoi1 h3 {
+    z-index: 9;
+    font-size: 27px;
+    position: absolute;
+    top: 86px;
+    left: 23px;
+    color: black;
+    width: 107px;
+    height: 31px;
+}
+
+.khoi1 p ,.khoi2 p,.khoi3 p{
+    position: absolute;
+    top: 51px;
+    left: 12px;
+    line-height: 22px;
+}
+
+.khoi1 h1,.khoi3 h1,.khoi2 h1 {
+    position: absolute;
+    line-height: 40px;
+    left: 115px;
+    font-size: 28px;
+    font-family: sans-serif;
+    color:#2c3e50;
+}
+.nd7{
+    position: absolute;
+    background: url("./img/anh9.jpg") no-repeat;
+    background-size: cover;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    top: 3880px;
+}
+.center{
+    width:40%;
+    height: 67%;
+    position: absolute;
+    top:60%;
+    left: 72%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background: #333;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.center.bienhinh12{
+    animation: bienhinh12 0.4s forwards;
+    animation-delay: 0.1s;
+}
+@-webkit-keyframes bienhinh12{
+    0%{
+        opacity: 0;
+        left: 120%;
+
+    }
+    100%{
+        opacity: 1;
+        left: 72%;
+    }
+}
+.center h1{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+}
+.center .skillbox{
+    margin: 20px 0;
+    width:100%;
+    box-sizing: border-box;
+}
+.skillbox p{
+    color: #fff;
+    padding: 0;
+    margin:0 0 10px;
+    font-family: bold;
+    letter-spacing: 1px;
+
+}
+.skillbox p:nth-child(2){
+    float: right;
+    position: relative;
+    top:-25%;
+    z-index: 2;
+
+}
+.skill{
+    position: relative;
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #0fffb7;
+    border-radius: 2px;
+}
+.skill-lever{
+    background:#0fffb7;
+    width:100%;
+    height: 10px;
+    opacity: 0;
+
+}
+
+/* CONTACT US */
+.container{
+    position: relative;
+    width:80%;
+    padding:3% 21%;
+    box-sizing: border-box;
+    left: -17%;
+    top: 81px;
+    opacity: 0;
+}
+.container.bienhinh14{
+    animation: bienhinh14 0.4s forwards;
+    animation-delay: 0.1s;
+}
+@-webkit-keyframes bienhinh14{
+    0%{
+        opacity: 0;
+        left:-80%;
+
+    }100%{
+        opacity: 1;
+        left: -17%;
+    }
+}
+.container h2{
+    width:100%;
+    color:#45f3ff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container .row100{
+    position: relative;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(autofit,mimax(300px,1fr));
+
+}
+.container .row100 .col{
+    position: relative;
+    width:100%;
+    padding:0 10px;
+    margin:30px 0 10px;
+    transition: 0.5s;
+
+}
+.container .row100 .inputbox{
+    position: relative;
+    width:100%;
+    height: 40px;
+    color:#45f3ff;
+
+}
+.container .row100 .inputbox input,
+.container .row100 .inputbox.textarea textarea{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding:0 10px;
+    z-index: 1;
+    color: #000;
+
+}
+.container .row100 .inputbox .text{
+    position: absolute;
+    top:0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding:0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container .row100 .inputbox input:focus + .text,.container .row100 .inputbox input:valid + .text{
+    top:-35px;
+    left: -10px;
+
+}
+.container .row100 .inputbox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: #45f3ff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+
+}
+.container .row100 .inputbox input:focus ~ .line,
+.container .row100 .inputbox input:focus ~ .line{
+    height:100%;
+}
+.container .row100 .inputbox.textarea{
+
+position: relative;
+width: 100%;
+height: 100px;
+padding:10px 0;
+
+
+}
+.container .row100 .inputbox.textarea textarea{
+    height: 50%;
+   resize: none;
+}
+.container .row100 .inputbox textarea:focus + .text,
+.container .row100 .inputbox textarea:valid + .text{
+    top:-35px;
+    left: -10px;
+
+}
+.container .row100 .inputbox input:focus ~ .line,
+.container .row100 .inputbox input:focus ~ .line{
+    height:100%;
+}
+input[type="submit"]{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #45f3ff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+}
